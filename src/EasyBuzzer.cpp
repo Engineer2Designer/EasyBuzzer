@@ -75,6 +75,7 @@ void EasyBuzzerClass::singleBeep(unsigned int frequency, unsigned int duration, 
 /* Stop beeping. */
 void EasyBuzzerClass::stopBeep()
 {
+	mStartTime = 0;
 #if defined ESP32
 	ledcDetachPin(mPin);
 	pinMode(mPin, INPUT);
