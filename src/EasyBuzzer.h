@@ -49,6 +49,8 @@ class EasyBuzzerClass
 	void singleBeep(unsigned int frequency, unsigned int duration, void (*finishedCallbackFunction)());
 	/* Stop beeping. */
 	void stopBeep();
+	/* Get State.*/
+	bool getOnOff();
 	/* Set the pin where the buzzer is connected. */
 	void setPin(unsigned int pin);
 	/* Set On duration. */

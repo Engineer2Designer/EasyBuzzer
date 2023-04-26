@@ -83,6 +83,15 @@ void EasyBuzzerClass::stopBeep()
 	noTone(mPin);
 #endif
 }
+/* Get State */
+bool EasyBuzzerClass::getOnOff(){
+	if (mStartTime = 0){
+		return false;
+	}
+	else {
+		return true;
+	}
+}
 /* Set the pin where the buzzer is connected. */
 void EasyBuzzerClass::setPin(unsigned int pin)
 {
