@@ -85,7 +85,7 @@ void EasyBuzzerClass::stopBeep()
 }
 /* Get State */
 bool EasyBuzzerClass::getOnOff(){
-	if (mStartTime = 0){
+	if (mStartTime == 0){
 		return false;
 	}
 	else {
